@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":  "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "lint": "eslint src/index.jsx  src/**/**; exit 0",
+    "lint-fix": "eslint src/index.jsx src/**/** --fix; exit 0"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +21,9 @@
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "eslint": "^5.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-react": "^7.10.0",
     "html-webpack-plugin": "^2.29.0",
     "react-hot-loader": "^3.0.0-beta.7",
     "webpack": "^3.4.0",
